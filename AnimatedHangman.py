@@ -42,6 +42,7 @@ pg.display.set_caption('AnimatedHangman')
 # pygame_textinput variables
 textInput = ti.TextInput(font_size=30, font_family='./data/JetBrainsMOno-Light.ttf')
 inputOftext = str()
+enablecheatmode = 0
 textlastline = str()
 
 # gamespeed variables
@@ -155,7 +156,7 @@ while True:
         render(text, [10, 160], black, font18)
 
         # cheatmode on condition
-        if inputOftext == 'cheatmode':
+        if enablecheatmode == 1:
             textX = 10
             for i in word[0]:
                 text = i
@@ -174,6 +175,7 @@ while True:
 
         # losing condition
         if chances == 0:
+            enablecheatmode = 1
             textlastline = 'You Lost!'
             render(textlastline, [10, 270], black, font18)
             fps = 0
@@ -227,6 +229,8 @@ while True:
                         # deciding text value to be displayed for later use
                         textlastline = 'This letter doesnt exist in the word'
 
+            else:
+                enablecheatmode = 1
             # clearing the user text for another cycle
             textInput.clear_text()
 
