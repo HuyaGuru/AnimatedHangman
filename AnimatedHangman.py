@@ -134,10 +134,10 @@ while True:
 
     if stage == 2:
 
-        text = 'You get ' + str(chances) + ' chances to guess the word, with each wrong guess hangman gets closer to'
+        text = 'You get ' + str(chances) + ' chances to guess the word, with each wrong guess hangman gets'
         render(text, [10, 40], black, font18)
 
-        text = 'his demise.'
+        text = 'closer to his demise.'
         render(text, [10, 70], black, font18)
 
         text = 'Chances : ' + str(chances)
