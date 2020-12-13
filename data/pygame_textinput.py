@@ -32,9 +32,9 @@ class TextInput:
             password=False):
         """
         :param initial_string: Initial text to be displayed
-        :param font_family: name or list of names for font (see pygame.font.match_font for precise format)
-        :param font_size:  Size of font in pixels
-        :param antialias: Determines if antialias is applied to font (uses more processing power)
+        :param font_family: name or list of names for font35 (see pygame.font35.match_font for precise format)
+        :param font_size:  Size of font35 in pixels
+        :param antialias: Determines if antialias is applied to font35 (uses more processing power)
         :param text_color: Color of text (duh)
         :param cursor_color: Color of cursor
         :param repeat_keys_initial_ms: Time in ms before keys are repeated when held
