@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # standard modules
 import pygame as pg
 import pandas as pd
